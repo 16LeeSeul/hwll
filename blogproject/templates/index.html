@@ -86,6 +86,16 @@
     </div>
   </div> -->
 
+  {% if user.is_authenticated %} 
+  <div class="title">
+        <div class="container">
+          <div class="col-lg-12 welcome">
+              <a href="./cal/calendar"><h1> Calendar로 GO! </h1></a>
+            </div>
+        </div>
+    </div>
+
+  {% else %}
   <div class="title">
     <div class="container">
       <div class="col-lg-12 welcome">
@@ -113,6 +123,7 @@
       </div>
     </div>
   </div>
+  {% endif %}
 
 
 
